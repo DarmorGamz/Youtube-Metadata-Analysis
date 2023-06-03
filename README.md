@@ -12,78 +12,51 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/DarmorGamz/REPOSITORY_TEMPLATE">
+  <a href="https://github.com/DarmorGamz/Youtube-Metadata-Analysis">
     <img src="images/logo.png" alt="Logo" width="125" height="125">
   </a>
-<h3 align="center">REPOSITORY TEMPLATE</h3>
+<h3 align="center">Youtube Metadata Analyser</h3>
 
   <p align="center">
-    Repository Template is designed to streamline the creation of new repositories, ensuring a consistent and organized structure for all your projects. Equipped with best practices for development and collaboration, this template will save you time and effort by providing a well-structured starting point for various types of projects.
+    This project is designed to analyze top videos from specific YouTube channels and extract insights about what makes these videos successful based on their metadata such as tags, keywords, and descriptions.
     <br />
     <br />
-    <a href="https://github.com/DarmorGamz/REPOSITORY_TEMPLATE">View Demo</a>
+    <a href="https://github.com/DarmorGamz/Youtube-Metadata-Analysis">View Demo</a>
     ·
-    <a href="https://github.com/DarmorGamz/REPOSITORY_TEMPLATE/issues">Report Bug</a>
+    <a href="https://github.com/DarmorGamz/Youtube-Metadata-Analysis/issues">Report Bug</a>
     ·
-    <a href="https://github.com/DarmorGamz/REPOSITORY_TEMPLATE/issues">Request Feature</a>
+    <a href="https://github.com/DarmorGamz/Youtube-Metadata-Analysis/issues">Request Feature</a>
   </p>
 </div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![product-screenshot]
-
-
 ### Built With
 
-[![C][C.com]][C-url]
- 
-[![HTML.com]][HTML-url] [![CSS3.com]][CSS3-url] [![JavaScript.com]][JavaScript-url]
-
-[![PHP.com]][PHP-url] [![MYSQL.com]][MYSQL-url] [![Linux.com]][Linux-url] [![AWS.com]][AWS-url]
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Before running the scripts, you need to set up your environment and install necessary dependencies.
 
 ### Prerequisites
+The codebase is written in Python 3. If you don't have Python installed, download and install it from python.org.
+### Install Dependencies
+Navigate to the project directory and install the necessary Python packages using pip:
+```python
+cd Youtube-Metadata-Analysis
+pip install -r requirements.txt
+```
+### Obtain YouTube Data API v3 key
+To access the YouTube Data API, you will need to obtain an API key from the Google Developer Console.
+1. Visit the Google Developer Console.
+2. Create a new project.
+3. Enable YouTube Data API v3 for that project.
+4. Generate an API key.
 
-### Installation
+Once you have the API key, store it in a safe place and do not share it with anyone. You will need to include this key in your application.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,24 +76,20 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the GPL License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p
 
 
 <!-- CONTACT -->
 ## Contact
 
-Darren Morrison - darren09@live.ca  
-Carter Glynn - carter.glynn14@gmail.com  
+Darren Morrison - darren09@live.ca 
 
-Project Link: [https://github.com/DarmorGamz/REPOSITORY_TEMPLATE](https://github.com/DarmorGamz/REPOSITORY_TEMPLATE)
+Project Link: [https://github.com/DarmorGamz/Youtube-Metadata-Analysis](https://github.com/DarmorGamz/Youtube-Metadata-Analysis)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,23 +97,23 @@ Project Link: [https://github.com/DarmorGamz/REPOSITORY_TEMPLATE](https://github
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-
+Myself ;)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/DarmorGamz/REPOSITORY_TEMPLATE.svg?style=for-the-badge
-[contributors-url]: https://github.com/DarmorGamz/REPOSITORY_TEMPLATE/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/DarmorGamz/REPOSITORY_TEMPLATE.svg?style=for-the-badge
-[forks-url]: https://github.com/DarmorGamz/REPOSITORY_TEMPLATE/network/members
-[stars-shield]: https://img.shields.io/github/stars/DarmorGamz/REPOSITORY_TEMPLATE.svg?style=for-the-badge
-[stars-url]: https://github.com/DarmorGamz/REPOSITORY_TEMPLATE/stargazers
-[issues-shield]: https://img.shields.io/github/issues/DarmorGamz/REPOSITORY_TEMPLATE.svg?style=for-the-badge
-[issues-url]: https://github.com/DarmorGamz/REPOSITORY_TEMPLATE/issues
-[license-shield]: https://img.shields.io/github/license/DarmorGamz/REPOSITORY_TEMPLATE.svg?style=for-the-badge
-[license-url]: https://github.com/DarmorGamz/REPOSITORY_TEMPLATE/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/DarmorGamz/Youtube-Metadata-Analysis.svg?style=for-the-badge
+[contributors-url]: https://github.com/DarmorGamz/Youtube-Metadata-Analysis/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/DarmorGamz/Youtube-Metadata-Analysis.svg?style=for-the-badge
+[forks-url]: https://github.com/DarmorGamz/Youtube-Metadata-Analysis/network/members
+[stars-shield]: https://img.shields.io/github/stars/DarmorGamz/Youtube-Metadata-Analysis.svg?style=for-the-badge
+[stars-url]: https://github.com/DarmorGamz/Youtube-Metadata-Analysis/stargazers
+[issues-shield]: https://img.shields.io/github/issues/DarmorGamz/Youtube-Metadata-Analysis.svg?style=for-the-badge
+[issues-url]: https://github.com/DarmorGamz/Youtube-Metadata-Analysis/issues
+[license-shield]: https://img.shields.io/github/license/DarmorGamz/Youtube-Metadata-Analysis.svg?style=for-the-badge
+[license-url]: https://github.com/DarmorGamz/Youtube-Metadata-Analysis/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/darren--morrison
 [product-screenshot]: images/screenshot.png
