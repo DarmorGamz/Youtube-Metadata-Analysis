@@ -38,7 +38,39 @@
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
+### Prerequisites
+Assumed you have NPM, Node.js and Python3 installed on your machine 
+#### AWS Amplify CLI
+```
+npm install -g @aws-amplify/cli
+amplify configure
+SignIn to AWS
+Create IAM user (ex. Amplify-Dev)
+Attach policies directly (AdministratorAccess-Amplify) *Note this isn't the safest option, but is the quickest option
+Security credentials->Create acces key->CLI
+Copy accessKeyId, and secretAccessKey into terminal
+```
+####  Create React App
+```
+npx create-react-app {Your App Directory Name}
+cd {Your App Directory Name}
+npm start
+```
+####  Initialize AWS Amplify
+```
+amplify init
+npm install aws-amplify @aws-amplify/ui-react
+amplify add hosting
+amplify publish
+```
+####  Add AWS Amplify Api
+```
+amplify add api
+```
+####  Add AWS Amplify Auth
+```
+amplify add auth
+```
 Before running the scripts, you need to set up your environment and install necessary dependencies.
 
 ### Prerequisites
