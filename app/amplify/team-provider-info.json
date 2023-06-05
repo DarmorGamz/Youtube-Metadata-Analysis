@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyde53045516ab4-staging-193236-authRole",
+      "UnauthRoleArn": "arn:aws:iam::691551307434:role/amplify-amplifyde53045516ab4-staging-193236-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::691551307434:role/amplify-amplifyde53045516ab4-staging-193236-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplifyde53045516ab4-staging-193236-deployment",
+      "UnauthRoleName": "amplify-amplifyde53045516ab4-staging-193236-unauthRole",
+      "StackName": "amplify-amplifyde53045516ab4-staging-193236",
+      "StackId": "arn:aws:cloudformation:us-east-2:691551307434:stack/amplify-amplifyde53045516ab4-staging-193236/8f942420-030e-11ee-8cf9-063e53c14a9d",
+      "AmplifyAppId": "d1j265mgovqczd"
+    },
+    "categories": {
+      "auth": {
+        "YoutubeMetadataAnalysis": {}
+      }
+    }
+  }
+}
