@@ -71,6 +71,15 @@ amplify add api
 ```
 amplify add auth
 ```
+####  Add EsLint
+```
+npm init @eslint/config
+```
+####  NextUI
+```
+npm i @nextui-org/react
+```
+
 Before running the scripts, you need to set up your environment and install necessary dependencies.
 
 ### Prerequisites

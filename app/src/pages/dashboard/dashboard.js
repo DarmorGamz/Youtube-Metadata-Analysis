@@ -1,11 +1,7 @@
-import * as React from 'react';
-import { Amplify } from 'aws-amplify';
-import { Dashboard, } from './pages/dashboard/dashboard'
-
-import { Authenticator, ThemeProvider, View, Text, Image} from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
-import awsconfig from './aws-exports';
-Amplify.configure(awsconfig);
+import * as React from "react";
+import { Grid, ThemeProvider, useTheme, Card, Text, View, Flex, Heading, TabItem, Tabs, Icon, Loader } from "@aws-amplify/ui-react";
+import { GiHood } from 'react-icons/gi';
+import { SearchField } from '@aws-amplify/ui-react';
 
 const theme = {
     name: 'synthwave-theme',
@@ -129,36 +125,66 @@ const theme = {
     ],
 };
 
-const components = {
-    Header() {
-        return (
-            <View textAlign="center" padding={theme.tokens.space.large}>
-                <Image
-                    alt="Amplify logo"
-                    src="https://docs.amplify.aws/assets/logo-dark.svg"
-                />
-            </View>
-        );
-    },
-
-    Footer() {
-        return (
-            <View textAlign="center">
-                <Text color={theme.tokens.colors.pink[80]}>
-                    &copy; All Rights Reserved
-                </Text>
-            </View>
-        );
-    }
-};
-export default function App() {
+export function Dashboard() {
     return (
-        <ThemeProvider colorMode='dark' theme={theme}>
-            <Authenticator components={components}>
-                {({ signOut, user }) => (
-                    <Dashboard/>
-                )}
-            </Authenticator>
-        </ThemeProvider>
+        <View padding="0.4rem" width="100vw" height="100vh" backgroundColor={{base:'white'}}>
+            <Flex
+                direction="column"
+                justifyContent="flex-start"
+                alignItems="stretch"
+                alignContent="flex-start"
+                wrap="nowrap"
+                gap="0.5rem"
+            >
+                <Card height="6vh"
+                      width="100%"
+                      padding="0"
+                      margin="0"
+                >
+                    <Flex
+                        height="100%"
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        alignContent="center"
+                    >
+                        <Text>Header</Text>
+                    </Flex>
+                </Card>
+                <Flex
+                    direction="row"
+                    justifyContent="flex-start"
+                    alignItems="stretch"
+                    alignContent="flex-start"
+                    wrap="nowrap"
+                    gap="0.5rem"
+                >
+                    <Card height="87.6vh"
+                          width="15vw"
+                    >
+                        <SearchField height="10%" width="100%" label="search" placeholder="Search here..." />
+                    </Card>
+
+                    <Card height="87.6vh"
+                          width="85vw"
+                    ><Text>Main</Text></Card>
+                </Flex>
+
+                <Card height="4vh"
+                      width="100%"
+                >
+                <Flex
+                    height="100%"
+                    direction="row"
+                    justifyContent="center"
+                    alignItems="center"
+                    alignContent="center"
+                >
+                    <Text>Copyright &copy; DARMOR inc.</Text>
+                </Flex>
+                </Card>
+            </Flex>
+
+        </View>
     );
 }
