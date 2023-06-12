@@ -1,0 +1,12 @@
+{
+  "AppSyncApiName": "YoutubeMetadataAnalysis",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authYoutubeMetadataAnalysis",
+      "Outputs.UserPoolId"
+    ]
+  },
+  "AuthModeLastUpdated": "2023-06-11T21:08:09.165Z"
+}

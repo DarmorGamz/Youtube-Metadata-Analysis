@@ -1,0 +1,11 @@
+type User @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  email: String
+}
+
+type YoutubeAPIKey @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  apiKey: String!
+  User: User @hasOne
+}
+ 
