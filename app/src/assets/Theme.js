@@ -1,9 +1,6 @@
-import * as React from "react";
-import { Grid, ThemeProvider, useTheme, Card, Text, View, Flex, Heading, TabItem, Tabs, Icon, Loader } from "@aws-amplify/ui-react";
-import { GiHood } from 'react-icons/gi';
-import { SearchField } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
 
-const theme = {
+export const Theme = {
     name: 'synthwave-theme',
     tokens: {
         colors: {
@@ -125,66 +122,3 @@ const theme = {
     ],
 };
 
-export function Dashboard() {
-    return (
-        <View padding="0.4rem" width="100vw" height="100vh" backgroundColor={{base:'white'}}>
-            <Flex
-                direction="column"
-                justifyContent="flex-start"
-                alignItems="stretch"
-                alignContent="flex-start"
-                wrap="nowrap"
-                gap="0.5rem"
-            >
-                <Card height="6vh"
-                      width="100%"
-                      padding="0"
-                      margin="0"
-                >
-                    <Flex
-                        height="100%"
-                        direction="row"
-                        justifyContent="center"
-                        alignItems="center"
-                        alignContent="center"
-                    >
-                        <Text>Header</Text>
-                    </Flex>
-                </Card>
-                <Flex
-                    direction="row"
-                    justifyContent="flex-start"
-                    alignItems="stretch"
-                    alignContent="flex-start"
-                    wrap="nowrap"
-                    gap="0.5rem"
-                >
-                    <Card height="87.6vh"
-                          width="15vw"
-                    >
-                        <SearchField height="10%" width="100%" label="search" placeholder="Search here..." />
-                    </Card>
-
-                    <Card height="87.6vh"
-                          width="85vw"
-                    ><Text>Main</Text></Card>
-                </Flex>
-
-                <Card height="4vh"
-                      width="100%"
-                >
-                <Flex
-                    height="100%"
-                    direction="row"
-                    justifyContent="center"
-                    alignItems="center"
-                    alignContent="center"
-                >
-                    <Text>Copyright &copy; DARMOR inc.</Text>
-                </Flex>
-                </Card>
-            </Flex>
-
-        </View>
-    );
-}

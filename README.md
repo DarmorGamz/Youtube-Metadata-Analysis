@@ -50,10 +50,10 @@ Attach policies directly (AdministratorAccess-Amplify) *Note this isn't the safe
 Security credentials->Create acces key->CLI
 Copy accessKeyId, and secretAccessKey into terminal
 ```
-####  Create React App
+####  Create React App2
 ```
-npx create-react-app {Your App Directory Name}
-cd {Your App Directory Name}
+npx create-react-app {Your App2 Directory Name}
+cd {Your App2 Directory Name}
 npm start
 ```
 ####  Initialize AWS Amplify
