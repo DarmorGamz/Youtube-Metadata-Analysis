@@ -16,10 +16,10 @@ function App() {
         <ThemeProvider colorMode='dark' theme={Theme}>
             <Authenticator>
             {({ user, signOut }) => (
-                <View padding="0.4rem" width="100vw" height="100vh" backgroundColor={{base:'white'}}>
-                    <Flex direction="column" justifyContent="flex-start" alignItems="stretch" alignContent="flex-start" wrap="nowrap" gap="0.5rem">
+                <View style={{ minHeight:"99vh", minWidth:"100vw", display:"flex", direction: "column", overflowX: 'hidden', overflowY: 'hidden' }} padding="0.4rem" backgroundColor={{base:'white'}} >
+                    <Flex direction="column" justifyContent="flex-start" alignItems="stretch" alignContent="flex-start" wrap="nowrap" gap="0.2rem">
                         <Navbar/>
-                        <Flex direction="row" justifyContent="flex-start" alignItems="stretch" alignContent="flex-start" wrap="nowrap" gap="0.5rem">
+                        <Flex direction="row" wrap="nowrap" gap="0.5rem">
                             <User user={user} signOut={signOut}/>
                             <Content/>
                         </Flex>
